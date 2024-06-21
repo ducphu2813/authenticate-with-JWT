@@ -9,10 +9,10 @@ import java.util.Arrays;
 import java.util.List;
 
 @RestController
-@RequestMapping("/message")
+@RequestMapping("/messages")
 public class MessageController {
 
-    @GetMapping("/")
+    @GetMapping("/hello")
     public ResponseEntity<List<String>> messages() {
         return ResponseEntity.ok(Arrays.asList("Hello", "World"));
     }
