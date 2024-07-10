@@ -14,6 +14,8 @@ public class MessageController {
 
     @GetMapping("/hello")
     public ResponseEntity<List<String>> messages() {
-        return ResponseEntity.ok(Arrays.asList("Hello", "World"));
+        return ResponseEntity.ok(Arrays.asList(
+                "Hello",
+                "World"));
     }
 }
